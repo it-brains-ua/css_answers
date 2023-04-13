@@ -597,7 +597,7 @@ textarea:optional {
   <!--      Використовуйте цей селектор :in-range-->*/
 
 .lesson-four-task-seventeen input:in-range {
-  color: green;
+  color: red;
 }
 
 /*  <!--    Завдання №18.У цьому завданні потрібно зробити, щоб змінювався колір фону placeholder на червоний ,
@@ -609,9 +609,9 @@ textarea:optional {
   background-color: red;
 }
 
-/*  <!--    Завдання №19. Застосуйте селектор :focus-within до блоку,
+/*<!--    Завдання №19. Застосуйте селектор :focus-within до блоку , який  знаходиться у фокусі,*/
 
-  який змінює колір тексту на білий та фоновий колір на жовтий при активному стані. -->*/
+/*        щоб змінювався колір тексту на білий та фоновий колір на жовтий -->*/
 
 .lesson-four-task-nineteen .btn-group :focus-within {
   background-color: #ff0;
@@ -625,18 +625,4 @@ textarea:optional {
 .lesson-four-task-twenty input:invalid {
   background-color: red;
   color: white;
-}
-
-/*<!--
-
-Завдання №21.Зробити текст червоного кольору для мітки (label),
-яка має встановлене значення за замовчуванням (checked) для елементу input з типом радіо (radio)
-у розділі з класом lesson-four-task-twenty-one.
-
-Використовуйте цей селектор :default
-
--->*/
-
-.lesson-four-task-twenty-one input:default + label {
-  color: red;
 }
