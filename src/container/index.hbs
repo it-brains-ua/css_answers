@@ -1,936 +1,359 @@
-{{! Завдання 1. Зробіть , щоб HTML документ мав білий фон  , використовуйте Root селектор}}
-
-{{! Завдання 2. Зробіть, щоб всі елементи на сторінці мали текст чорного кольору  }}
-
-<body>
-  {{! Завдання 3. Зробіть, щоб h1 мав Синій колір фону }}
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 3</div>
-    <div class='card-body'>
-      <div>
-        <h1>Синій колір</h1>
-      </div>
-    </div>
-  </section>
-
-  {{! Завдання 4. Зробіть, щоб клас green мав текст зеленого кольору  }}
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 4</div>
-    <div class='card-body'>
-      <div>
-        <p class='green'>Зелений колір</p>
-      </div>
-    </div>
-  </section>
-
-  {{! Завдання 5. Зробіть, щоб елемент з індинтифікатором blue мав синій колір тексту }}
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 5</div>
-    <div class='card-body'>
-      <div>
-        <p id='blue'>Синій колір</p>
-      </div>
-    </div>
-  </section>
-
-  {{! Завдання 6. Зробіть, щоб тег p мав червоний фон ,а тег div мав зелений фон  }}
-  {{! Тут вам потрібно використовувати Селектор нащадка }}
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 6</div>
-    <div class='card-body'>
-      <div>
-        <div class='box'>
-          <div>
-            Контент коробки
-          </div>
-          <p>
-            Server
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  {{! Завдання 7. Задайте класу green зелений фон та білий колір тексту, використовуйте селектор класу  }}
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 7</div>
-    <div class='card-body'>
-      <div>
-        <section class='green'>
-          Зелений фон, але білий текст
-        </section>
-      </div>
-    </div>
-  </section>
-
-  {{! Завдання 8. Зробіть червоний фон для дочірніх елементів тега ul }}
-  {{! Використовуйте селектор для позначення дочірних елементів ( parent_tag > children_tag ) }}
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 8</div>
-    <div class='card-body'>
-      <div>
-        <ul>
-          <li>Елемент 1</li>
-          <li>Елемент 2</li>
-          <li>Елемент 3</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  {{! Завдання 9. Зробіть червоний фон для тегів, які є сестринськими відносно тега button з класом header-button }}
-  {{! Використовуйте Сестринські селектори відносно header-button }}
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 9</div>
-    <div class='card-body'>
-      <div>
-        <header>
-          <button class='header-button'>Click</button>
-          <span>Logo</span>
-        </header>
-      </div>
-    </div>
-  </section>
-
-  <!--  Завдання 10. Зробіть синій фон для всіх cусідських тегів <p>, тегу який має клас 'susid' , а текст білим застосувавши сусідський селектор  -->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 10</div>
-    <div class='card-body'>
-      <div>
-        <p class='susid'>Article</p>
-        <p>Article</p>
-        <p>Article</p>
-        <p>Article</p>
-      </div>
-    </div>
-  </section>
-
-  <!--  Завдання 11. Зробіть жовтий  фон  для класу .salo та індетифікатора #bread   -->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 11</div>
-    <div class='card-body'>
-      <div>
-        <p class='salo'>Salo</p>
-        <p id='bread'>Bread</p>
-        <p>Article</p>
-        <p>Article</p>
-      </div>
-    </div>
-  </section>
-
-  <!--                                                              /*  Урок 2  */                                    -->
-
-  <!--  Завдання №1: Для першого елементу списку зробіть колір тексту білим -->
-  <!--   Використовуйте Селектор першої дитини :first-child. -->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 1</div>
-    <div class='card-body'>
-      <div class='first-task'>
-        <ul>
-          <li>Елемент 1</li>
-          <li>Елемент 2</li>
-          <li>Елемент 3</li>
-          <li>Елемент 4</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!--  Завдання №2:  Змінити колір тексту першого елемента списку в першому блоці ul на жовтий -->
-  <!--   Використовуйте Селектор першої дитини :first-child. -->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 2</div>
-    <div class='card-body'>
-      <div class='second-task'>
-        <ul>
-          <li>Елемент 1</li>
-          <li>Елемент 2</li>
-        </ul>
-
-        <ul>
-          <li>Елемент 1</li>
-          <li>Елемент 2</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!--  Завдання №3:   Змінити фон першого елементу на жовтий в другому блоку ul на жовтий -->
-  <!--   Використовуйте Селектор першої дитини :first-child. -->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 3</div>
-    <div class='card-body'>
-      <div class='third-task'>
-        <ul>
-          <li>Елемент 1</li>
-          <li>Елемент 2</li>
-        </ul>
-
-        <ul>
-          <li>Елемент 1</li>
-          <li>Елемент 2</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!--  Завдання №4:  Змінити фон останнього елементу списку на жовтий. -->
-  <!--   Використовуйте Селектор останньої дитини :last-child. -->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 4</div>
-    <div class='card-body'>
-      <div class='four-task'>
-        <ul>
-          <li>Елемент 1</li>
-          <li>Елемент 2</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!--  Завдання №5: Змінити колір тексту останнього елемента списку в останньому блоці ul на білий -->
-  <!--   Використовуйте Селектор останньої дитини :last-child. -->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 5</div>
-    <div class='card-body'>
-      <div class='five-task'>
-        <ul>
-          <li>Елемент 1</li>
-          <li>Елемент 2</li>
-        </ul>
-
-        <ul>
-          <li>Елемент 1</li>
-          <li>Елемент 2</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!--  Завдання №6: Змінити колір тексту на червоний у блоках div, які єдині в своєму батьківському елементі section -->
-  <!--   Використовуйте Селектор одиничної дитини :only-child -->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 6</div>
-    <div class='card-body'>
-      <div class='only-child-task'>
-        <div>Текст блоку 1</div>
-      </div>
-      <div class='only-child-task'>
-        <div>Текст блоку 2</div>
-        <div>Текст блоку 2</div>
-      </div>
-      <div class='only-child-task'>
-        <div>Текст блоку 3</div>
-      </div>
-      <div class='only-child-task'>
-        <div>Текст блоку 4</div>
-      </div>
-    </div>
-  </section>
-
-  <!--  Завдання №7:  Застосуйте червоний фон до першого абзацу в div з классом seven-task  -->
-  <!--   Використовуйте Селектор першого типу :first-of-type-->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 7</div>
-    <div class='card-body'>
-      <div class='seven-task'>
-        <span>Абзац 0</span>
-        <p>Абзац 1</p>
-        <p>Абзац 2</p>
-        <p>Абзац 3</p>
-        <p>Абзац 4</p>
-      </div>
-    </div>
-  </section>
-
-  <!--  Завдання №8:  Застосуйте червоний фон до останнього абзацу в div з классом eight-task  -->
-  <!--   Використовуйте Селектор останнього типу :last-of-type-->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 8</div>
-    <div class='card-body'>
-      <div class='eight-task'>
-        <p>Абзац 1</p>
-        <p>Абзац 2</p>
-        <p>Абзац 3</p>
-        <p>Абзац 4</p>
-        <span>Абзац 5</span>
-      </div>
-    </div>
-  </section>
-
-  <!--  Завдання №9: Застосуйте жовтий фон для всіх <p> елементів, якщо в батьківському елементі більше не має <p>. -->
-  <!--   Використовуйте Селектор одиничного типу :only-of-type-->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 8</div>
-    <div class='card-body'>
-      <div class='nine-task'>
-        <div class='text-wrapper'>
-          <p>Це єдиний параграф в своїй категорії</p>
-        </div>
-        <div class='text-wrapper'>
-          <p>Це перший параграф</p>
-          <p>Це другий параграф</p>
-          <h2>Це перший заголовок h2</h2>
-          <h3>Це другий заголовок h2</h3>
-        </div>
-        <div class='text-wrapper'>
-          <p>Це єдиний параграф в своїй категорії</p>
-          <h2>Це третій заголовок h2</h2>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--   Урок 3  -->
-
-  <!-- Завдання №1.  Зайдайте білий колір тексту всім посиланням які мають атрибут href
-      Використовуйте селектор назви атрибута-
-   -->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 1</div>
-    <div class='card-body'>
-      <div class='lesson-three-task-one'>
-        <nav>
-          <ul>
-            <li><a>Головна</a></li>
-            <li><a href='/products'>Продукти</a></li>
-            <li><a href='/services'>Послуги</a></li>
-            <li><a href='/about'>Про нас</a></li>
-            <li><a href='/contact'>Контакти</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </section>
-
-  <!--Завдання №2. Зайдайте жовтий колір тексту всім елементам списку які мають атрибут value
-      Використовуйте селектор назви атрибута-->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 2</div>
-    <div class='card-body'>
-      <ol class='lesson-three-task-two'>
-        <li value='1'>Елемент 1</li>
-        <li> Елемент 2</li>
-        <li>Елемент 3</li>
-        <li value='1'> Елемент 4</li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- Завдання №3. Застосуйте селектор значення атрибута,
-   щоб встановити червоний фон всім елементам списку які мають атрибут
-   value зі значенням '3' -->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 3</div>
-    <div class='card-body'>
-      <ol class='lesson-three-task-three'>
-        <li>Елемент 1</li>
-        <li> Елемент 2</li>
-        <li value='3'>Елемент 3</li>
-        <li> Елемент 4</li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- Завдання №4. Застосуйте селектор наявності значення атрибута,
-    щоб встановити синій фон для кнопки з класом "primary"  .-->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 4</div>
-    <div class='card-body'>
-      <div class='lesson-three-task-four'>
-        <button class='primary action'>Primary Button</button>
-        <button class='secondary action'>Secondary Button</button>
-        <button class='action primary'>Tertiary Button</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Завдання №5. Надайте червоний фон всім кнопка назви класу яких починаються зі слова secondary -->
-
-  <!--  Використовуйте селектор префіксу значення атрибута -->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 5</div>
-    <div class='card-body'>
-      <div class='lesson-three-task-five'>
-        <button class='secondary'>
-          Первинна кнопка
-        </button>
-        <button class='btn-secondary-action'>
-          Другорядна кнопка
-        </button>
-        <button class='secondary-btn-second'>
-          Другорядна кнопка
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Завдання №6.  Застосуйте cелектор початку значення атрибута, щоб стилізувати тільки ті елементи списку,
-   класи яких починаються на "b" та встановіть для них зелений колір тексту та білий фон. -->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 6</div>
-    <div class='card-body'>
-      <div class='lesson-three-task-six'>
-        <ul>
-          <li class='btn-primary'>Елемент 1</li>
-          <li class='secondary'>Елемент 2</li>
-          <li class='button'>Елемент 3</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Завдання №7. Застосуйте селектор кореня значення атрибута, щоб стилізувати тільки ті елементи списку,
-  в назві класів яких зустрічається 'on' та встановіть для них зелений колір тексту та білий фон. -->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 7</div>
-    <div class='card-body'>
-      <div class='lesson-three-task-seven'>
-        <ul>
-          <li class='btn-primary'>Елемент 1</li>
-          <li class='secondary'>Елемент 2</li>
-          <li class='button'>Елемент 3</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!--   Завдання №8. Напишіть CSS-код, який за допомогою конструкції селектор кінцівки значення атрибута виділить червоним фоном елементи ,
-  які мають в кінці назви класу літеру "s". -->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 8</div>
-    <div class='card-body'>
-      <div class='lesson-three-task-eight'>
-        <ul>
-          <li>
-            <span class='tag t'>tag t</span></li>
-          <li>
-            <span class='tag s'>tag s</span></li>
-          <li>
-            <span class='tag'>tag</span></li>
-          <li>
-            <span class='tag s'>tag s</span></li>
-          <li>
-            <span class='tag r'>tag r</span></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!--  Завдання №9. Зробіть першу букву заголовків червоним кольором.-->
-  <!--  Використовуйте селектор псевдоелементу першої літери  -->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 9</div>
-    <div class='card-body'>
-      <div class='lesson-three-task-nine'>
-        <h2>Це заголовок 2</h2>
-        <h3>Це заголовок 3</h3>
-      </div>
-    </div>
-  </section>
-
-  <!--   Завдання №10. Задайте першому рядку жовтий фон. -->
-  <!--  Використовуйте селектор псевдоелементу першого рядка -->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 10</div>
-    <div class='card-body'>
-      <div class='lesson-three-task-ten'>
-        <p>Цей текст містить багато рядків і перший з них
-          буде особливим.</p>
-        <p>Цей текст містить багато рядків і перший з них
-          буде особливим.</p>
-        <p>Цей текст містить багато рядків і перший з них
-          буде особливим.</p>
-        <p>Цей текст містить багато рядків і перший з них
-          буде особливим.</p>
-      </div>
-    </div>
-  </section>
-
-  <!--    Завдання №11. Задайте червоний фон плейсхолдера для інпут-поля. -->
-  <!--  Використовуйте цей селектор псевдоелемента плейсхолдера-->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 11</div>
-    <div class='card-body'>
-      <div class='lesson-three-task-eleven'>
-        <input placeholder="Введіть своє ім'я" />
-        <input />
-        <input placeholder="Введіть своє ім'я" />
-        <input placeholder="Введіть своє ім'я" />
-      </div>
-    </div>
-  </section>
-
-  <!--   Завдання №12. Додайте "➤" перед кожним елементом списку;
-  Використовуйте селектора псевдоелемента ”попереду” -->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 12</div>
-    <div class='card-body'>
-      <div class='lesson-three-task-twelve'>
-        <ul>
-          <li>Перший елемент</li>
-          <li>Другий елемент</li>
-          <li>Третій елемент</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!--   Завдання №13. Додайте "➤" після кожного елемента списку;
-  Використовуйте селектора псевдоелемента ”після” -->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 13</div>
-    <div class='card-body'>
-      <div class='lesson-three-task-thirteen'>
-        <ul>
-          <li>Перший елемент</li>
-          <li>Другий елемент</li>
-          <li>Третій елемент</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!--   Урок 4  -->
-  <!-- Завдання №1. Змініть колір тексту на червоний та фон на жовтий, коли користувач наведе курсор миші на кнопку  -->
-  <!--  Використовуйте цей селектор :hover-->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 1</div>
-    <div class='card-body'>
-      <div class='lesson-four-task-one'>
-        <button class='btn'>Натисніть мене</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Завдання №2. Змініть фон заголовка на зелений, коли користувач наведе курсор миші на посилання: -->
-  <!--  Використовуйте цей селектор :hover-->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 2</div>
-    <div class='card-body'>
-      <div class='lesson-four-task-two'>
-        <a href='#' class='link'>Посилання</a>
-        <h1 class='title'>Це заголовок</h1>
-      </div>
-    </div>
-  </section>
-
-  <!-- Завдання №3. Змініть колір тексту та фон відвіданого посилання на жовтий: -->
-  <!--    Порада проходити це завдання на https://codepen.io/ ,адже через те,
-          що браузер запам'ятовує посилання на які ви заходили вам потрібно буде скидати кеш постійно,
-          тому легше всього пройти тут -->
-  <!--  Використовуйте цей селектор :visited-->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 3</div>
-    <div class='card-body'>
-      <div
-        id='lesson-four-task-three'
-        class='lesson-four-task-three'
-      >
-        <a
-          href='#lesson-four-task-three'
-          class='link'
-        >Посилання</a>
-      </div>
-    </div>
-  </section>
-
-  <!--    Завдання №4. Змініть колір тексту та фон посилання,
-    яке знаходиться в блоку з ідентифікатором "sidebar", на червоний: -->
-
-  <!--    Порада проходити це завдання на https://codepen.io/ ,адже через те,
-        що браузер запам'ятовує посилання на які ви заходили вам потрібно буде скидати кеш постійно,
-        тому легше всього пройти тут -->
-
-  <!--      Використовуйте цей селектор :link -->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 4</div>
-    <div class='card-body'>
-      <div class='lesson-four-task-four'>
-        <div id='sidebar'>
-          <a href='#sidebar' class='link'>Посилання</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--    Завдання №5. Змініть колір фону кнопки на синій , коли кнопка активна   -->
-
-  <!--      Використовуйте цей селектор :active -->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 5</div>
-    <div class='card-body'>
-      <div class='lesson-four-task-five'>
-        <button class='btn'>Натисни мене</button>
-      </div>
-    </div>
-  </section>
-
-  <!--    Завдання №6. Змініть колір тексту та фон кнопки, коли вона отримує фокус, на помаранчевий: -->
-
-  <!--      Використовуйте цей селектор :focus -->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 6</div>
-    <div class='card-body'>
-      <div class='lesson-four-task-six'>
-        <button class='btn'>Натисни мене</button>
-      </div>
-    </div>
-  </section>
-
-  <!--    Завдання №7. Змініть колір тексту та фон елемента,
-  який вказаний в URL як фрагмент, на зелений, коли на нього встановлюється :target: -->
-
-  <!--      Використовуйте цей селектор :target -->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 7</div>
-    <div class='card-body'>
-      <div class='lesson-four-task-seven'>
-        <div id='target'>Це ціль</div>
-        <a href='#target'>Перейти до цілі</a>
-      </div>
-    </div>
-  </section>
-
-  <!--    Завдання №8. Змініть колір тексту на білий та фон елемента на синій при натискані відповідного чекбоксу: -->
-
-  <!--      Використовуйте цей селектор :checked -->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 8</div>
-    <div class='card-body'>
-      <div class='lesson-four-task-eight'>
-        <label for='checkbox'>Виберіть цей чек бокс</label>
-        <input type='checkbox' id='checkbox' />
-
-        <div id='target'>Цей текст зміниться при виборі чек
-          боксу</div>
-      </div>
-    </div>
-  </section>
-
-  <!--    Завдання №9. Змінити колір тексту на синій для усіх елементів на сторінці, які написані українською мовою. -->
-
-  <!--      Використовуйте цей селектор :lang() -->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 9</div>
-    <div class='card-body'>
-      <div class='lesson-four-task-nine'>
-        <p lang='uk'>Ласкаво просимо на наш сайт!</p>
-        <p lang='en'>Welcome to our website!</p>
-        <p>Це текст на різних мовах.</p>
-      </div>
-    </div>
-  </section>
-
-  <!--    Завдання №10. Змінити колір тексту на червоний та фон на жовтий елементів форми, які включені та доступні для введення.-->
-
-  <!--      Використовуйте цей селектор :enabled -->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 10</div>
-    <div class='card-body'>
-      <div class='lesson-four-task-ten'>
-        <form>
-          <div class='form-group'>
-            <label for='username'>Ім'я користувача:</label>
-            <input
-              type='text'
-              class='form-control'
-              id='username'
-              name='username'
-              required
-            />
-          </div>
-
-          <div class='form-group'>
-            <label for='password'>Пароль:</label>
-            <input
-              type='password'
-              class='form-control'
-              id='password'
-              name='password'
-              required
-            />
-          </div>
-
-          <div class='form-group'>
-            <label for='email'>Email:</label>
-            <input
-              type='email'
-              class='form-control'
-              id='email'
-              name='email'
-              required
-              disabled
-            />
-          </div>
-          <button
-            type='submit'
-            class='btn btn-primary'
-          >Відправити</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!--    Завдання №11. При використанні селектора :disabled змінити фоновий колір на жовтий в полях введення, які є неактивними.-->
-
-  <!--      Використовуйте цей селектор :disabled -->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 11</div>
-    <div class='card-body'>
-      <div class='lesson-four-task-eleven'>
-        <label for='username'>Ім'я користувача:</label>
-        <input
-          type='text'
-          id='username'
-          name='username'
-          disabled
-        />
-
-        <label for='password'>Пароль:</label>
-        <input
-          type='password'
-          id='password'
-          name='password'
-          disabled
-        />
-
-        <button type='submit' disabled>Увійти</button>
-      </div>
-    </div>
-  </section>
-
-  <!--    Завдання №12. Встановіть жовтий фоновий колір для елементів <input>, що без атрибута readonly. -->
-
-  <!--      Використовуйте цей селектор :read-write -->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 12</div>
-    <div class='card-body'>
-      <div class='lesson-four-task-twelve'>
-        <label for='username'>Ім'я користувача:</label>
-        <input
-          type='text'
-          id='username'
-          name='username'
-          readonly
-        />
-
-        <label for='password'>Пароль:</label>
-        <input
-          type='password'
-          id='password'
-          name='password'
-        />
-
-        <button type='submit'>Увійти</button>
-      </div>
-    </div>
-  </section>
-
-  <!--  Завдання №13. Встановіть жовтий фоновий колір для інпуту з атрибутом readonly.
-  Змініть колір тексту на червоний, а фоновий колір на блідо-жовтий.  -->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 13</div>
-    <div class='card-body'>
-      <div class='lesson-four-task-thirteen'>
-        <input type='text' readonly />
-        <input type='text' />
-        <input type='text' />
-      </div>
-    </div>
-  </section>
-
-  <!--    Завдання №14. Зробіть поле вводу зеленим, коли введене значення коректне, і червоним - якщо ні. -->
-
-  <!--      Використовуйте ці селектори :valid та :invalid   -->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 14</div>
-    <div class='card-body'>
-      <div class='lesson-four-task-fourteen'>
-        <input type='text' required pattern='[A-Za-z]{3}' />
-      </div>
-    </div>
-  </section>
-
-  <!--    Завдання №15. Застосувати селектор :optional до текстового поля форми,
-  яке не є обов'язковим для заповнення, і змінити його фон на червоний,. -->
-
-  <!--      Використовуйте цей селектор :optional -->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 15</div>
-    <div class='card-body'>
-      <div class='lesson-four-task-fifteen'>
-        <form>
-          <label for='name'>Ім'я:</label>
-          <input
-            type='text'
-            id='name'
-            name='name'
-            required
-          />
-          <label for='email'>Електронна пошта:</label>
-          <input type='email' id='email' name='email' />
-          <label for='message'>Повідомлення:</label>
-          <textarea
-            id='message'
-            name='message'
-            optional
-          ></textarea>
-          <button type='submit'>Відправити</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!--    Завдання №16. Є форма з полем вводу числа, яке може бути від 0 до 100.
-  Задача змінити колір фону на червоний, якщо значення не входить до цього діапазону.-->
-
-  <!--      Використовуйте цей селектор :out-of-range -->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 16</div>
-    <div class='card-body'>
-      <div class='lesson-four-task-sixteen'>
-        <form>
-          <label for='quantity'>Кількість:</label>
-          <input
-            type='number'
-            id='quantity'
-            name='quantity'
-            min='0'
-            max='100'
-            class='bg-secondary'
-          />
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!--   Завдання №17. Є форма з полем вводу числа, яке може бути від 0 до 100.
-  Задача змінити колір фону на зелений, якщо значення входять до діапазону від 0 до 100. -->
-
-  <!--      Використовуйте цей селектор :in-range-->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 17</div>
-    <div class='card-body'>
-      <div class='lesson-four-task-seventeen'>
-        <form>
-          <label for='quantity'>Кількість:</label>
-          <input
-            type='number'
-            id='quantity'
-            name='quantity'
-            min='0'
-            max='100'
-            class='bg-secondary'
-          />
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!--    Завдання №18.У цьому завданні потрібно зробити, щоб змінювався колір фону placeholder на червоний ,
-  який зникає, коли користувач починає вводити. -->
-
-  <!--      Використовуйте цей селектор :placeholder-shown-->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 18</div>
-    <div class='card-body'>
-      <div class='lesson-four-task-eighteen'>
-        <input type='text' placeholder='Введіть текст' />
-      </div>
-    </div>
-  </section>
-
-  <!--    Завдання №19. Застосуйте селектор :focus-within до блоку , який  знаходиться у фокусі,
-
-  щоб змінювався колір тексту на білий та фоновий колір на жовтий -->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 19</div>
-    <div class='card-body'>
-      <div class='lesson-four-task-nineteen'>
-        <div class='btn-group'>
-          <button>Кнопка 1</button>
-          <button>Кнопка 2</button>
-          <button>Кнопка 3</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--    Завдання №20. При валідації форми з помилкою, змінюйте колір фону на червоний. -->
-
-  <!--      Використовуйте цей селектор :invalid-->
-
-  <section class='m-5 card'>
-    <div class='card-header'>Завдання 20</div>
-    <div class='card-body'>
-      <div class='lesson-four-task-twenty'>
-        <form>
-          <label>
-            Ім'я:
-            <input type='text' name='name' required />
-          </label>
-          <br />
-          <label>
-            Електронна пошта:
-            <input type='email' name='email' required />
-          </label>
-          <br />
-          <button type='submit'>Відправити</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-
-</body>
+<!--
+Завдання №1.
+
+- Для h1 тега: Замініть колір тексту на зелений.
+- Для p тега: Зробіть колір заливки тексту червоним
+- Для button тега: Зробіть штрихи тексту в 1px з кольором #000
+
+Увага!!! Звертайте увагу на те, що є клас "task_1", використовуйте його як Селектор нащадка для тегів , щоб у вас все
+ коректно працювало
+-->
+
+<section class='m-5 card'>
+	<div class='card-header'>Завдання 1</div>
+	<div class='card-body task_1'>
+
+		<h1 class='mb-2'>Centered hero</h1>
+		<p class='mb-2'>Quickly design and customize responsive mobile-first sites with Bootstrap</p>
+		<button class='btn btn-primary'>Submit</button>
+
+	</div>
+</section>
+
+<!-- ============================== -->
+
+<!--
+Завдання №2.
+
+- Для h1 тега: Змініть напрям тексту на "rtl" (справа наліво).
+- Для p тега: Змініть вирівнювання тексту на праворуч
+- Для button тега: Змініть регістр тексту кнопки, використовуючи властивість регістра тексту.
+
+Увага!!! Звертайте увагу на те, що є клас "task_2", використовуйте його як Селектор нащадка для тегів, щоб у вас все
+коректно працювало.
+
+-->
+
+<section class='m-5 card'>
+	<div class='card-header'>Завдання 2</div>
+	<div class='card-body task_2'>
+		<h1 class='mb-2'>Centered hero</h1>
+		<p class='mb-2'>Quickly design and customize responsive mobile-first sites with Bootstrap</p>
+		<button class='btn btn-primary'>Submit</button>
+		<button class='btn btn-outline-primary'>Submit</button>
+	</div>
+</section>
+
+<!-- ============================== --><!--
+
+Завдання №3.
+
+- Для h1 тега: Зробіть текст вертикальним, використовуючи властивість орієнтації тексту.
+- Для pre тега: Застосуйте властивість ширини табуляції і змініть розмір табуляції на 4.
+- Для button тега:
+1) Збільште проміжок між літерами на 2px для тексту кнопки.
+2) Застосуйте властивість декорації тексту до тексту кнопки, зробіть його підкресленим
+
+Увага!!! Звертайте увагу на те, що є клас "task_3", використовуйте його як Селектор нащадка для тегів, щоб у вас все
+коректно працювало.
+
+-->
+
+<section class='m-5 card'>
+	<div class='card-header'>Завдання 3</div>
+	<div class='card-body task_3'>
+		<h1 class='mb-2'>Centered hero</h1>
+		<pre>
+					Quickly design and customize responsive mobile-first
+      sites with Bootstrap
+    </pre>
+		<button class='btn btn-primary'>Submit</button>
+	</div>
+</section>
+
+<!-- ============================== -->
+
+<!--
+
+Завдання № 4.
+
+- Для h1 тега:
+	1) Збільште розмір шрифту заголовка до 50 пікселів.
+	2) Змініть стиль шрифту на "italic".
+
+- Для p тега:
+    1) Під'єднайте шрифт 'Open Sans' (Bold 700) з Google Fonts в проєкт. (підключайте через тег <link> в default.hbs)
+    2) Змініть шрифт на 'Open Sans'.
+    3) Зробіть прогрузку шрифту так, щоб Браузер повинен замінити на більш схожий шрифт до того моменту,
+     поки заданий шрифт не буде завантажений.(swap)
+	4) Зробіть шрифт жирним (700)
+
+
+Увага!!! Звертайте увагу на те, що є клас "task_4", використовуйте його як Селектор нащадка для тегів, щоб у вас все
+коректно працювало.
+
+-->
+
+<section class='m-5 card'>
+	<div class='card-header'>Завдання 4</div>
+	<div class='card-body task_4'>
+		<main role='main' class='container'>
+			<h1 class='mt-5'>Sticky footer</h1>
+			<p class='lead'>
+				Pin a fixed-height footer to the
+				bottom of the viewport in desktop browsers with this
+				custom HTML and CSS.
+			</p>
+		</main>
+	</div>
+</section>
+
+<!-- ============================== -->
+
+<!--
+
+Завдання № 5.
+
+- Для тега div:
+1) Зробіть зовнішній відступ 10px.
+2) Зробіть ширину та висоту по 100px.
+3) Зробіть фон червоний
+
+- Для тега button:
+1) Зробіть внутрішні та зовнішні відступи по 10px.
+2) Застосуйте властивість розмір коробки, щоб розміри кнопки включав лише його вміст, не враховуючи внутрішні відступи.
+
+- Для тега input:
+1) Зробіть мінімальну ширину 150px.
+2) Зробіть мінімальну висоту 45px.
+3) Зробіть максимальну ширину 300px.
+4) Зробіть максимальну висоту 60px.
+5) Зробіть фон сірий.
+
+- Для p тега:
+1) Сховайте цей елемент за допомогою властивості відображення
+
+Увага!!! Звертайте увагу на те, що є клас "task_5", використовуйте його як Селектор нащадка для тегів, щоб у вас все
+коректно працювало.
+
+-->
+<section class='m-5 card'>
+	<div class='card-header'>Завдання 5</div>
+	<div class='card-body task_5'>
+		<div>Contact form</div>
+		<input type='text' placeholder="Введіть текст..." />
+		<p>Сховай цей елемент</p>
+		<button class='btn btn-primary'>Submit</button>
+	</div>
+</section>
+
+<!--
+
+Завдання № 6.
+
+- Для тега h1:
+1) Зробіть зовнішню рамку товщиною 3 пікселі, подвійною лінією, синій колір
+2) Зробіть зсув зовнішньої рамки на 10px.
+
+- Для тега div:
+1) Зробіть внутрішню рамку товщиною 3 пікселі, пунктирною лінією, червоного кольору 
+
+- Для тега button:
+1) Зробіть радіус закруглення рамки 25px.
+2) Задайте тінь тексту на елементі зі зміщенням вправо на 2px, вниз на 2px, розмиття 10px та колір тіні #888888.
+
+-->
+
+<section class='m-5 card'>
+	<div class='card-header'>Завдання 6</div>
+	<div class='card-body task_6'>
+		<h1 class='mb-2'>Centered hero</h1>
+		<div>Contact form</div>
+		<p class='mb-2'>Quickly design and customize responsive
+			mobile-first sites with Bootstrap</p>
+		<button class='btn btn-primary'>Submit</button>
+		<button class='btn btn-outline-primary'>Submit</button>
+	</div>
+</section>
+
+<!--
+
+Завдання № 7.
+
+- Для тега button:
+1) Зробіть тінь блоку зі зміщенням вправо на 2px, вниз на 2px, розмиванням 5px, поширення 10px та кольором #666666.
+2) Зробіть висоту рядка елементу зі значенням 2.
+
+- Для тега strong:
+1) Зробіть вертикальне вирівнювання по верхньому краю свого батьківського елемента (top).
+2) Зробіть курсор, який вказує на те, що програма зайнята. (wait)
+
+-->
+
+<section class='m-5 card'>
+	<div class='card-header'>Завдання 7</div>
+	<div class='card-body task_7'>
+		<p>
+			<span style="font-size: 40px">Big text</span>
+			<strong class='mb-2'>Quickly design and customize responsive
+				mobile-first sites with Bootstrap</strong>
+		</p>
+		<button class='btn btn-outline-primary'>Submit</button>
+	</div>
+</section>
+
+<!--
+
+Завдання № 8.
+
+- Для тега div:
+ 1) Зробіть елемент невидимим;
+
+- Для тега p:
+ 1) Зробіть максимальну висоту 70px.
+ 2) Зробіть обрізання блоку, з смужкою прокрутки;
+
+- Для тега h1:
+ 1) Зробіть максимальну висоту 50px.
+ 2) Зробіть обрізання блоку, якщо контент елемента не вміщується;
+ 3) Забороніть перенесення рядків.(nowrap)
+ 4) Зробіть так, щоб текст, який не поміщається в елемент, з'являвся в кінці з трьома крапками;
+
+-->
+
+<section class='m-5 card'>
+	<div class='card-header'>Завдання 8</div>
+	<div class='card-body task_8'>
+		<h1>
+			Lorem ipsum dolor sit amet, consectetur adipisicing
+			elit. Dolore eaque eos error et laudantium magnam
+			perspiciatis qui, sunt! Alias aliquid beatae
+			consequuntur esse expedita harum nihil officia quia,
+			quis repudiandae sit tenetur ut! Adipisci excepturi
+			fugiat fugit ipsum qui reiciendis sapiente sit
+			voluptatum! Accusamus architecto corporis ea enim
+			harum illum nemo possimus quos rem ut. Atque autem
+			beatae consequuntur, deserunt dicta ducimus earum eum
+			facilis fugit harum hic in labore laborum magnam
+			maiores maxime minus necessitatibus numquam odio
+			officia omnis perspiciatis porro provident quam quasi
+			rerum saepe sapiente soluta tenetur totam ullam vero
+			voluptatem voluptates. Cumque minus unde voluptate
+			voluptatem?
+		</h1>
+		<div>Зробіть елемент невидимим</div>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing
+			elit. A dignissimos distinctio doloremque dolores
+			earum facere facilis, fuga impedit iure laborum
+			laudantium nesciunt nostrum optio pariatur placeat
+			repellendus soluta! Ad aut commodi delectus ea eum
+			eveniet, fugiat illum ipsam iusto labore laboriosam
+			laudantium magni non omnis perspiciatis quia repellat
+			reprehenderit tenetur velit voluptate! Accusantium
+			alias architecto culpa debitis harum impedit ipsa iste
+			iusto, magni maiores necessitatibus quam, quod
+			repellendus repudiandae sed vero voluptatem. Ab
+			aliquam blanditiis consectetur cumque deserunt est
+			nulla quibusdam, rerum similique soluta! Autem commodi
+			consectetur maiores molestiae, nobis officiis tenetur.
+			Adipisci aliquam commodi, consectetur deleniti dolores
+			doloribus earum ex exercitationem incidunt ipsam
+			laudantium quisquam quos ratione repellat sint tempore
+			tenetur unde. Asperiores cumque deleniti enim ipsum
+			natus qui quisquam quod tenetur. Ab cumque deleniti
+			doloribus enim excepturi, fuga, hic laborum maxime,
+			molestiae nemo nulla quasi quia quis reiciendis sint!
+			Deserunt eum facere porro rem voluptates. In iure
+			minus mollitia rerum voluptatum? Amet atque cumque
+			deleniti minus nihil odit quia recusandae rem
+			veritatis! Culpa ipsam minus saepe. A ad aliquam
+			aliquid amet aperiam aspernatur assumenda, at atque
+			doloremque eaque eos, est, eum eveniet expedita in
+			ipsum iste itaque iusto modi perspiciatis placeat quas
+			quo reiciendis similique tempore vel vitae?
+		</p>
+	</div>
+</section>
+
+<!--
+
+Завдання № 9.
+
+
+- Для тега h1:
+    1) Встановіть значення властивості, яке не дозволяє словам переноситися на новий рядок, якщо вони не поміщаються в один рядок.
+    2) Збільшити відстань між словами на 30px.
+- Для тега div:
+    1) Зробіть перенесення слова за допомогою символу (&shy;).
+- Для тега p:
+    1) Встановіть значення властивості, яке дозволяє словам переноситися на новий рядок, якщо вони не поміщаються в один рядок, і розділяти їх по буквах;
+- Для тега textarea:
+    1) Сховайте змінювання розміру елемента за допомогою миші.
+
+
+
+-->
+
+<section class='m-5 card'>
+	<div class='card-header'>Завдання 9</div>
+	<div class='card-body task_9'>
+		<h1>
+			Lorem ipsum dolor sit amet,dbabdbsjhbhbdjhbfgfnghjbfdhjbghjbfdjhbhjdfbhjbhjb?
+		</h1>
+		<div>
+			Contact form Lorem
+			ipsummmmmmmmnjnububvbdhvufbdvuifdhovudfhsfgbfsdhvods&shy;fjkghkdhghfkjhgkjfhdkhufhvdfnuguiheiufgbvfdkhvbiu
+			dolor sit amet, consectetur adipisicing elit. Aperiam
+			assumenda atque aut autem beatae corporis, culpa eaque
+			earum facere facilis fugiat ipsa magni officia omnis
+			pariatur reiciendis repudiandae unde ut?
+		</div>
+		<p>Lorem ipsum dolor sit amet, consectetur
+			adipisicingsdsdasdsafhbdshfbjsdbjfbjdsbhfbdshjbfhjsdbhbf
+			elit. A dignissimos distinctio doloremque dolores
+			earum facere facilis, fuga impedit iure laborum
+			laudantium nesciunt nostrum optio pariatur placeat
+			repellendus soluta! Ad aut commodi delectus ea eum
+			eveniet, fugiat illum ipsam iusto labore laboriosam
+			laudantium magni non omnis perspiciatis quia repellat
+			reprehenderit tenetur velit voluptate! Accusantium
+			alias architecto culpa debitis harum impedit ipsa iste
+			iusto, magni maiores necessitatibus quam, quod
+			repellendus repudiandae sed vero voluptatem. Ab
+			aliquam blanditiis consectetur cumque deserunt est
+			nulla quibusdam, rerum similique soluta! Autem commodi
+			consectetur maiores molestiae, nobis officiis tenetur.
+			Adipisci aliquam commodi, consectetur deleniti dolores
+			doloribus earum ex exercitationem incidunt ipsam
+			laudantium quisquam quos ratione repellat sint tempore
+			tenetur unde. Asperiores cumque deleniti enim ipsum
+			natus qui quisquam quod tenetur. Ab cumque deleniti
+			doloribus enim excepturi, fuga, hic laborum maxime,
+			molestiae nemo nulla quasi quia quis reiciendis sint!
+			Deserunt eum facere porro rem voluptates. In iure
+			minus mollitia rerum voluptatum? Amet atque cumque
+			deleniti minus nihil odit quia recusandae rem
+			veritatis! Culpa ipsam minus saepe. A ad aliquam
+			aliquid amet aperiam aspernatur assumenda, at atque
+			doloremque eaque eos, est, eum eveniet expedita in
+			ipsum iste itaque iusto modi perspiciatis placeat quas
+			quo reiciendis similique tempore vel vitae?
+		</p>
+		<textarea>
+			doloribus earum ex exercitationem incidunt ipsam
+			laudantium quisquam quos ratione repellat sint tempore
+			tenetur unde. Asperiores cumque deleniti enim ipsum
+			natus qui quisquam quod tenetur. Ab cumque deleniti
+			doloribus enim excepturi, fuga, hic laborum maxime,
+			molestiae nemo nulla quasi quia quis reiciendis sint!
+			Deserunt eum facere porro rem voluptates. In iure
+			minus mollitia rerum voluptatum? Amet atque cumque
+			deleniti minus nihil odit quia recusandae rem
+			veritatis! Culpa ipsam minus saepe. A ad aliquam
+			aliquid amet aperiam aspernatur assumenda, at atque
+			doloremque eaque eos, est, eum eveniet expedita in
+			ipsum iste itaque iusto modi perspiciatis placeat quas
+	  	</textarea>
+	</div>
+</section>
