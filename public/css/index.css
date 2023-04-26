@@ -41,7 +41,7 @@ h1 {
 /*  Завдання 7. Зробіть через селектор тег.клас коричневий фон та білий текст для тегу section, який має клас green  */
 
 section.brown {
-  background-color: green;
+  background-color: brown;
   color: white;
 }
 
