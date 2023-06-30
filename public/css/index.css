@@ -607,10 +607,9 @@ textarea:optional {
 .lesson-four-task-eighteen input:placeholder-shown {
   background-color: red;
 }
+/*   <!--    Завдання №19. Застосуйте селектор :focus-within до кнопки , яка  знаходиться у фокусі, */
 
-/*<!--    Завдання №19. Застосуйте селектор :focus-within до блоку , який  знаходиться у фокусі,*/
-
-/*        щоб змінювався колір тексту на білий та фоновий колір на жовтий -->*/
+/*   щоб змінювався колір тексту на білий та фоновий колір на жовтий --> */
 
 .lesson-four-task-nineteen .btn-group :focus-within {
   background-color: #ff0;
